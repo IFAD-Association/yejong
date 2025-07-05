@@ -22,7 +22,35 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="canonical" href="https://ifineartdesign.com/watercolor.html" />
+		<style>
+  		  section {
+  		    font-size: 15px; /* 폰트 크기 키움 */
+   		   line-height: 1.6; /* 줄간격도 조금 여유 있게 */
+  		  }
+		
+		    /* 기존 메뉴 항목 (a 태그) */
+		  #menu ul li a {
+		    font-size: 15px;
+		  }
 
+		  /* 드롭다운 메뉴 항목 (span 태그) */
+		  #menu ul li span.opener {
+		    font-size: 15px;
+		  }
+
+		  /* 사이드바 드롭다운 하위 메뉴 (PC + 모바일 모두 적용) */
+		  #menu ul li ul li a {
+		    font-size: 14px !important;
+		  }
+
+		  /* 모바일 전용 세부 조정 */
+		  @media screen and (max-width: 980px) {
+ 		   #menu ul li ul li a {
+ 		     font-size: 14px !important;
+  		  }
+		  }
+			
+ 		</style>
 	</head>
 	<body class="is-preload">
 
