@@ -331,23 +331,53 @@
 									  </article>
 										
 									  <article>
-									    <a href="take.html" class="image">
-									      <img src="images/pic13.jpg" alt="자격시험 응시 안내 대표 이미지" />
-									    </a>
-									    <h3>
-									      자격시험 응시 안내<br>
-									    <small>Information about certification tests</small>
-									    </h3>
-									    <p>응시 수수료 안내<br>응시 수수료 공통 사항<br>환불규정<br>문의 및 접수</p>
-									    
-										  <ul class="actions">
-									      <li><a href="take.html" class="button">More</a></li>
-									    </ul>
-										  <p style="font-size: 11px; color: #aaa; text-align: right; margin-top: 10px;">
-  <a href="tuition.html" style="color: #aaa; text-decoration: underline;">수강료 전체 보기</a>
-</p>
+  <a href="take.html" class="image">
+    <img src="images/pic13.jpg" alt="자격시험 응시 안내 대표 이미지" />
+  </a>
+  <h3>
+    자격시험 응시 안내<br>
+    <small>Information about certification tests</small>
+  </h3>
+  <p>응시 수수료 안내<br>응시 수수료 공통 사항<br>환불규정<br>문의 및 접수</p>
+  <ul class="actions">
+    <li><a href="take.html" class="button">More</a></li>
+  </ul>
 
-									  </article>
+  <!-- 토글 링크 -->
+  <p style="font-size: 11px; color: #aaa; text-align: right; margin-top: 10px;">
+    <a href="javascript:void(0);" onclick="toggleTuition()" style="color: #aaa; text-decoration: underline;">수강료 전체 보기</a>
+  </p>
+
+  <!-- 숨겨진 수강료 정보 -->
+  <div id="tuition-box" style="display: none; font-size: 13px; color: #444; margin-top: 15px;">
+    <table border="1" cellpadding="6" cellspacing="0" style="width: 100%; border-collapse: collapse;">
+      <thead style="background:#f0f0f0;">
+        <tr>
+          <th>과정</th>
+          <th>수강료</th>
+          <th>수업 횟수</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>유치부</td><td>월 120,000원</td><td>주 1회</td></tr>
+        <tr><td>초등부</td><td>월 150,000원</td><td>주 1~2회</td></tr>
+        <tr><td>중고등부</td><td>월 180,000원</td><td>주 2회</td></tr>
+        <tr><td>입시반</td><td>상담 후 결정</td><td>개별 맞춤</td></tr>
+        <tr><td>도예 / 성인취미반</td><td>월 130,000원</td><td>주 1회</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size: 12px; color: #999; margin-top: 8px;">※ 수강료는 수업 형태에 따라 변동될 수 있으며, 정확한 안내는 상담을 통해 제공됩니다.</p>
+  </div>
+
+  <!-- 토글 스크립트 -->
+  <script>
+    function toggleTuition() {
+      var box = document.getElementById("tuition-box");
+      box.style.display = (box.style.display === "none") ? "block" : "none";
+    }
+  </script>
+</article>
+
 									</div>
 								</section>
 
