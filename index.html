@@ -298,6 +298,54 @@
 						</div>
 					</div>
 
+  <!-- 토글 링크 -->
+  <p style="font-size: 11px; color: #aaa; text-align: right; margin-top: 10px;">
+    <a href="javascript:void(0);" onclick="toggleTuition()" style="color: #aaa; text-decoration: underline;">수강료 전체 보기</a>
+  </p>
+
+   <!-- 숨겨진 수강료 정보 -->
+  <div id="tuition-box" style="display: none; font-size: 13px; color: #444; margin-top: 15px;">
+    <table border="1" cellpadding="6" cellspacing="0" style="width: 100%; border-collapse: collapse;">
+      <thead style="background:#f0f0f0;">
+        <tr>
+          <th>과정</th>
+          <th>수강료</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr><td>아동부</td><td>170,000원</td></tr>
+      <tr><td>초등부</td><td>170,000원</td></tr>
+      <tr><td>중고등부</td><td>170,000원</td></tr>
+      <tr><td>전공탐색반</td><td>190,000원</td></tr>
+      <tr><td>예비입시반</td><td>210,000원</td></tr>	    
+      <tr><td>입시반</td><td>390,000원</td></tr>
+      <tr><td>도예반</td><td>110,000원</td></tr>
+      <tr><td>디지털드로잉반</td><td>110,000원</td></tr>	
+      <tr><td>취미미술반</td><td>150,000원</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size: 8px; color: rgba(180,180,180,0.08); margin-top: 6px; text-align: justify;">
+    ※ 수강료는 수업 형태에 따라 변동될 수 있으며, 정확한 안내는 상담을 통해 제공됩니다.
+  </p>
+</div>
+
+
+  <!-- 토글 스크립트 -->
+  <script>
+    function toggleTuition() {
+      var box = document.getElementById("tuition-box");
+      box.style.display = (box.style.display === "none") ? "block" : "none";
+    }
+  </script>
+</article>
+
+									</div>
+								</section>
+
+						</div>
+					</div>
+
+				
 				<!-- Sidebar -->
 					<div id="sidebar">
 						<div class="inner">
